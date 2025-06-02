@@ -25,7 +25,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
   <main id="main-content" data-layout="index">
     <section id="hero" class="pt-8 pb-6">
       <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
-        Mingalaba
+        從現在開始
       </h1>
       <a
         target="_blank"
@@ -43,28 +43,21 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
       </a>
 
       <p>
-        AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro
-        blog theme. This theme follows best practices and provides accessibility
-        out of the box. Light and dark mode are supported by default. Moreover,
-        additional color schemes can also be configured.
-      </p>
-      <p class="mt-2">
-        Read the blog posts or check
-        <LinkButton
-          class="underline decoration-dashed underline-offset-4 hover:text-accent"
-          href="https://github.com/satnaing/astro-paper#readme"
-        >
-          README
-        </LinkButton> for more info.
+        前幾天看到朋友整理一份資料用 AstroPaper 我覺得很不錯，也想用看看這個模板來記錄一些東西。最近剛好想找個地方重新開始記錄自己的學習過程(來督促自己學習)。這就是現在這個 blog 。之後可能會試著修改一些偏好的東西，目前先暫時用預設的來記錄。
+        <br>
+        <br>老翰
+        <br>2025-06-02
       </p>
       {
         // only display if at least one social link is enabled
-        SOCIALS.length > 0 && (
-          <div class="mt-4 flex flex-col sm:flex-row sm:items-center">
-            <div class="mr-2 mb-1 whitespace-nowrap sm:mb-0">Social Links:</div>
-            <Socials />
-          </div>
-        )
+        // 2025-06-02 memo: 目前不覺得需要出現那麼多社群相關的連結，先註解掉。 
+        //
+        // SOCIALS.length > 0 && (
+        //   <div class="mt-4 flex flex-col sm:flex-row sm:items-center">
+        //     <div class="mr-2 mb-1 whitespace-nowrap sm:mb-0">Social Links:</div>
+        //     <Socials />
+        //   </div>
+        // )
       }
     </section>
 
